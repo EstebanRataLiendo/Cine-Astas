@@ -8,16 +8,7 @@ async function bootstrap() {
     bodyParser: true,
     rawBody: true,
   });
-  app.enableCors({
-    origin: [
-      "https://cine-astas-three.vercel.app/",
-      "http://localhost:5173",
-      "http://localhost:3000",
-    ],
-    methods: "GET,POST,PUT,PATCH,DELETE,OPTIONS",
-    credentials: true,
-    allowedHeaders: "Content-Type, Authorization",
-  });
+  app.enableCors("*");
 
   app.useGlobalPipes(new ValidationPipe());
 
