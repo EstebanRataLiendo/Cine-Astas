@@ -1,0 +1,1 @@
+{"version":3,"file":"envs.js","sourceRoot":"","sources":["../../../src/payments/config/envs.ts"],"names":[],"mappings":";;;AAAa,QAAA,IAAI,GAAG;IAClB,iBAAiB,EAAE,OAAO,CAAC,GAAG,CAAC,iBAAiB;IAChD,kBAAkB,EAAE,OAAO,CAAC,GAAG,CAAC,kBAAkB;IAClD,iBAAiB,EAAE,OAAO,CAAC,GAAG,CAAC,iBAAiB;IAChD,sBAAsB,EAAE,OAAO,CAAC,GAAG,CAAC,sBAAsB;CAC3D,CAAA"}

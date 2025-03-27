@@ -1,0 +1,91 @@
+import { MoviesService } from "./movies.service";
+import { CreateMovieDto } from "./dto/create-movie.dto";
+import { UpdateMovieDto } from "./dto/update-movie.dto";
+export declare class MoviesController {
+    private readonly moviesService;
+    constructor(moviesService: MoviesService);
+    create(createMovieDto: CreateMovieDto): Promise<{
+        description: string | null;
+        format: string[];
+        title: string;
+        id: string;
+        year: number;
+        genre: string;
+        language: string;
+        duration: number;
+        imageUrl: string | null;
+        trailerUrl: string | null;
+        classification: string;
+        releaseDate: Date;
+    }>;
+    findAll(): Promise<{
+        description: string | null;
+        format: string[];
+        title: string;
+        id: string;
+        year: number;
+        genre: string;
+        language: string;
+        duration: number;
+        imageUrl: string | null;
+        trailerUrl: string | null;
+        classification: string;
+        releaseDate: Date;
+    }[]>;
+    findOne(id: string): Promise<{
+        description: string | null;
+        format: string[];
+        title: string;
+        id: string;
+        year: number;
+        genre: string;
+        language: string;
+        duration: number;
+        imageUrl: string | null;
+        trailerUrl: string | null;
+        classification: string;
+        releaseDate: Date;
+    } | null>;
+    update(id: string, updateMovieDto: UpdateMovieDto): Promise<{
+        description: string | null;
+        format: string[];
+        title: string;
+        id: string;
+        year: number;
+        genre: string;
+        language: string;
+        duration: number;
+        imageUrl: string | null;
+        trailerUrl: string | null;
+        classification: string;
+        releaseDate: Date;
+    }>;
+    updateMovie(id: string, dto: UpdateMovieDto): Promise<{
+        description: string | null;
+        format: string[];
+        title: string;
+        id: string;
+        year: number;
+        genre: string;
+        language: string;
+        duration: number;
+        imageUrl: string | null;
+        trailerUrl: string | null;
+        classification: string;
+        releaseDate: Date;
+    }>;
+    remove(id: string): import(".prisma/client").Prisma.Prisma__MovieClient<{
+        description: string | null;
+        format: string[];
+        title: string;
+        id: string;
+        year: number;
+        genre: string;
+        language: string;
+        duration: number;
+        imageUrl: string | null;
+        trailerUrl: string | null;
+        classification: string;
+        releaseDate: Date;
+    }, never, import("@prisma/client/runtime/library").DefaultArgs, import(".prisma/client").Prisma.PrismaClientOptions>;
+}
