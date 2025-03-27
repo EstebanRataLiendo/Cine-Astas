@@ -11,7 +11,7 @@ async function bootstrap() {
     });
     app.enableCors({
         origin: [
-            "https://cine-astas-three.vercel.app/",
+            "https://cine-astas-server1.vercel.app/",
             "http://localhost:5173",
             "http://localhost:3000",
         ],
